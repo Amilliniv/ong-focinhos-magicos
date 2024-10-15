@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Doações</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/img/logo verde.webp">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="donation-body">
     <header class="header">
         <nav class="header-content">
             <a href="index.html" class="header-title">ONG Focinhos Mágicos</a>
-            <div >
-                <ul class="header-buttons">
+            <div>
+                <ul id="donation-buttons" class="header-buttons">
                     <a href="index.html">Início</a>
-                    <a href="donation.html">Doações</a>
-                    <a class="contact-button" href="contact.html">Contato</a>
+                    <a class="donation-button" href="doacoes.html">Doações</a>
+                    <a href="contato.html">Contato</a>
                 </ul>
             </div>
             <div class="header-icons">
@@ -34,17 +35,20 @@
             </div>
         </nav>
     </header>
-    <footer class="footer-icons">
-        <a href="https://www.facebook.com/AMIGOSDOSPET/" class="facebook-button" target="_blank">
-            <i class="fa-brands fa-facebook fa-2x"></i>
-        </a>
-        <a href="https://www.instagram.com/ongfocinhosmagicoscp/?hl=en" class="instagram-button" target="_blank">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-        </a>
-    </footer>
+    <main class="donation">
+        <div class="donation-code">
+            <h2>Chave PIX</h2>
+            <img src="assets/img/qrcode.png" alt="Imagem do QRCode para as doações">
+        </div>
+        <div class="donation-text">
+            <h3>Doe para ajudar nossos focinhos a encontrarem um lar!</h3>
+            <h4>Chave <span>cnpj</span>: 21.145.931/0001-58</h4>
+            <h5>Ou aponte a câmera do seu celular para o QRCode.</h5>
+        </div>
+        <img src="assets/img/Patinha.png" alt="Pata" class="patinha patinha-esquerda">
+    </main>
 
-    <a 
-        href="https://api.whatsapp.com/send?phone=5549991234109&text=Quero%20fazer%20uma%20doação!"
+    <a href="https://api.whatsapp.com/send?phone=5549991234109&text=Quero%20fazer%20uma%20doação!"
         class="button-whatsapp">
         <img src="assets/img/logo-wpp.png" alt="Botão whatsapp" />
     </a>
