@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 370px;
+    overflow-x: hidden;
+}
+
+
+/*----------------- Início ----------------->*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 130px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.hero {
+    width: 100vw;
+    height: 720px;
+    background-color: #006f58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-content h1 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.logo {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.hero-images img {
+    width: 320px;
+    display: flex;
+    align-self: center;
+    
+}
+
+.bg-professional {
+    width: 100vw;
+    height: 600px;
+    background-image: url(../img/Patinha\ reta.png);
+    background-size: 50px;
+}
+
+.professional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px 0;
+    gap: 20px;
+}
+
+.professional-description {
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.professional img {
+    width: 250px;
+}
+
+.examples {
+    background-color: #3d6f4f;
+    width: 100vw;
+}
+
+.examples-content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 50px 20px;
+    gap: 30px;
+}
+
+.examples p {
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+.examples-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.examples-images img {
+    width: 280px;
+    height: 340px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+footer {
+    width: 100vw;
+    height: 50px;
+    background-color: #006f58;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-whatsapp {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 99;
+}
+
+.button-whatsapp img {
+    max-width: 44px;
+    transition: transform 0.4s;
+}
+
+.button-whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*----------------- Doações ----------------->*/
+
+.donation {
+    background-color: #3d6f4f;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 10px;
+}
+
+.donation-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donation-code img {
+    width: 80%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.donation-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.donation-text span {
+    text-transform: uppercase;
+}
+
+
+/*----------------- Contato ----------------->*/
+
+
+
+
+
+
+
+
+
+/*----------------- Responsivo ----------------->*/
+
+@media screen and (min-width: 690px) {
+
+    .header {
+        height: 2.875rem;
+    }
+
+    .header-content {
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header-buttons a {
+        display: flex;
+        height: 2.875rem;
+        align-items: center;
+        padding: 0.5rem 1.875rem;
+    }
+
+    .header-buttons a:hover {
+        background-color: #006f58;
+        color: #fff;
+    }
+
+    .main-button {
+        background-color: #006f58;
+        color: #fff;
+    }
+
+    .header-icons {
+        display: flex;
+    }
+
+    .header-icons i {
+        color: #006f58;
+        border-color: #006f58;
+        transition: 0.3s;
+    }
+
+    .header-icons i:hover {
+        transform: scale(1.2);
+    }
+
+    .hero {
+        background-color: #006f58;
+        height: 500px;
+    }
+
+    .hero-content {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 30px;
+        padding: 5px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.125rem;
+    }
+
+    .logo {
+        width: 205px;
+        height: 205px;
+        border-radius: 1.25rem;
+    }
+
+    .hero-info {
+        align-items: flex-start;
+    }
+
+    .hero-images img {
+        width: 480px;
+    }
+
+    .professional {
+        height: 600px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        color: #000;
+    }
+
+    .professional img {
+        width: 18.75rem;
+        height: 25rem;
+    }
+
+    .professional-description {
+        text-align: left;
+        line-height: 3.75rem;
+        margin-bottom: 6.25rem;
+    }
+
+    .professional-description h2 {
+        font-size: 3.875rem;
+        text-transform: uppercase;
+    }
+
+    .professional-description h3 {
+        font-size: 2.625rem;
+    }
+
+    .examples {
+        height: 720px;
+        background-image: url(../img/Patinha.png);
+        background-repeat: no-repeat;
+        background-size: 5%;
+        background-position: 0.625rem 0.625rem;
+    }
+
+
+    .examples p {
+        width: 790px;
+        font-size: 16px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .examples-images {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5.625rem;
+        padding:30px;
+    }
+
+    .examples-images img {
+        width: 25%;
+        
+        transition: 0.2s;
+    }
+
+    .examples-images img:hover {
+        transform: scale(1.1);
+        z-index: 1;
+    }
+
+    .footer-icons {
+        background-color: #006f58;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.625;
+        gap: 1.563rem;
+    }
+
+    .footer-icons i {
+        font-size: 3.125rem;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    .footer-icons i:hover {
+        transform: scale(1.1);
+    }
+
+    .button-whatsapp {
+        right: 1.5rem;
+        bottom: 0.875rem;
+    }
+
+    .button-whatsapp img {
+        max-width: 4rem;
+
+    }
+
+    .donation-body {
+        overflow: hidden;
+    }
+
+    #donation-buttons a:hover {
+        background-color: #3d6f4f;
+        color: #fff;
+    }
+
+    .donation-button {
+        background-color: #3d6f4f;
+        color: #fff;
+    }
+
+    .donation {
+        flex-direction: row;
+        gap: 3.125rem;
+        background-color: #3d6f4f;
+        background-image: url(../img/Patinha.png);
+        background-size: 5%;
+        background-position: 0.625rem 0.625rem;
+        background-repeat: no-repeat;
+        justify-content: center;
+        padding: 10px 10px 100px;
+
+    }
+
+    .donation-code {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    .donation-code img {
+        width: 300px;
+    }
+
+    .donation-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 0.938rem;
+    }
+
+    .donation-text h3 {
+        font-size: 1.625rem;
+        margin-bottom: 0.938rem;
+        text-transform: uppercase;
+        font-weight: initial;
+    }
+
+    .donation-text h4 {
+        font-size: 1.25rem;
+        font-weight: initial;
+    }
+
+    .donation-text h5 {
+        font-size: 1.25rem;
+        font-weight: initial;
+    }
+
+    .donation-text span {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+}
