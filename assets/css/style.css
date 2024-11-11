@@ -81,12 +81,12 @@ body {
     width: 320px;
     display: flex;
     align-self: center;
-    
+
 }
 
 .bg-professional {
     width: 100vw;
-    height: 600px;
+    height: 800px;
     background-image: url(../img/Patinha\ reta.png);
     background-size: 50px;
 }
@@ -107,9 +107,40 @@ body {
     gap: 10px;
 }
 
+.professional-description ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 10px;
+}
 
 .professional img {
     width: 250px;
+}
+
+.rescue {
+    width: 100vw;
+    height: 1040px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5F5F2;
+    align-items: center;
+    padding: 25px 0;
+    gap: 20px;
+}
+
+.rescue-title {
+    width: 200px;
+}
+
+.rescue-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.rescue-examples img {
+    width: 400px;
 }
 
 .examples {
@@ -129,7 +160,7 @@ body {
     left: 10px;
 }
 
-.patinha-direita{
+.patinha-direita {
     bottom: 10px;
     right: 10px;
 }
@@ -215,9 +246,14 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
 }
 
-.donation-code img {
+.donation-code .donation-title {
+    width: 200px;
+}
+
+.donation-code .donation-qrcode {
     width: 80%;
     border-radius: 8px;
     margin-top: 10px;
@@ -228,17 +264,53 @@ footer a {
     flex-direction: column;
     gap: 15px;
     text-align: center;
+    align-items: center;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+.donation-list {
+    display: flex;
+    width: 300px;
+    text-align: left;
 }
 
 .donation-text span {
     text-transform: uppercase;
+    font-weight: bold;
 }
+
 
 
 /*----------------- Contato ----------------->*/
 
+.contact {
+    background-color: #3d6f4f;
+    width: 100vw;
+    height: 100vh;
+}
 
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 30px;
+    padding: 20px;
+}
 
+.contact-content img {
+    width: 200px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 
 
 
@@ -320,13 +392,18 @@ footer a {
         width: 480px;
     }
 
-    .professional {
+    .bg-professional {
         height: 600px;
+        background-size: 70px;
+    }
+
+    .professional {
         flex-direction: row;
-        align-items: center;
+        align-items: last baseline;
         justify-content: center;
         gap: 5rem;
         color: #000;
+        
     }
 
     .professional img {
@@ -349,6 +426,12 @@ footer a {
         font-size: 2.625rem;
     }
 
+    .professional-description ul {
+        width: 600px;
+        line-height: 25px;
+        font-size: 18px;
+    }
+
     .examples {
         height: 720px;
         position: relative;
@@ -365,16 +448,39 @@ footer a {
         left: 10px;
     }
 
-    .patinha-direita{
+    .patinha-direita {
         bottom: 10px;
         right: 30px;
+    }
+
+    .rescue {
+        height: 480px;
+        padding: 20px 0;
+        gap: 40px;
+    }
+
+    .rescue-examples {
+        flex-direction: row;
+    }
+
+    .rescue-examples img {
+        transition: 0.2s;
+    }
+
+    .rescue-examples img:hover {
+        transform: scale(1.1);
+        z-index: 1;
+    }
+
+    .examples {
+        height: 600px;
     }
 
     .examples p {
         width: 790px;
         font-size: 16px;
         text-align: center;
-        padding: 20px;
+        padding: 10px 0 20px;
     }
 
     .examples-images {
@@ -382,12 +488,10 @@ footer a {
         align-items: center;
         justify-content: center;
         gap: 5.625rem;
-        padding:30px;
     }
 
     .examples-images img {
         width: 25%;
-        
         transition: 0.2s;
     }
 
@@ -438,6 +542,7 @@ footer a {
     .donation-button {
         background-color: #3d6f4f;
         color: #fff;
+
     }
 
     .donation {
@@ -455,32 +560,27 @@ footer a {
         gap: 1.25rem;
     }
 
-    .donation-code img {
+    .donation-code .donation-qrcode {
         width: 300px;
     }
 
     .donation-text {
         display: flex;
         flex-direction: column;
-        text-align: left;
+        font-size: 16px;
         gap: 0.938rem;
     }
 
-    .donation-text h3 {
-        font-size: 1.625rem;
-        margin-bottom: 0.938rem;
-        text-transform: uppercase;
-        font-weight: initial;
+    .patinha-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
     }
 
-    .donation-text h4 {
-        font-size: 1.25rem;
-        font-weight: initial;
-    }
-
-    .donation-text h5 {
-        font-size: 1.25rem;
-        font-weight: initial;
+    .patinha-text img {
+        width: 50px;
     }
 
     .donation-text span {
@@ -488,4 +588,44 @@ footer a {
         font-weight: bold;
     }
 
+    #contact-buttons a:hover {
+        background-color: #3d6f4f;
+        color: #fff;
+    }
+
+    .contact-button {
+        background-color: #3d6f4f;
+        color: #fff;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px 100px;
+    }
+    .contact-content {
+        flex-direction: row;
+        justify-content: center;
+        background-image: url(../img/Patinha.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 70px;
+        margin-bottom: 0;
+    }
+    
+    .contact-text {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        gap: 20px;
+    }
+
+    .contact-info {
+        align-items: flex-start;
+    }
+
+    .contact-body {
+        overflow: hidden;
+    }
 }
